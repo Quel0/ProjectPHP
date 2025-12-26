@@ -1,5 +1,5 @@
 <!--DOCTYPE html -->
-<?php include ("datos.php")?>
+<?php include("datos.php") ?>
 <html>
 
 <head>
@@ -7,16 +7,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css"
-        integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootswatch Flatly para Bootstrap 5 (incluye Bootstrap 5.2 CSS) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.0/dist/flatly/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <!-- https://radu.link/make-footer-stay-bottom-page-bootstrap/ -->
@@ -37,11 +33,15 @@
                     echo "active";
                 } ?>
             " aria-current="page">INICIO</a></li>
-            <li class="nav-item">
-                <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdownMenu1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     CATEGORÍAS
-                    <span class="caret"></span>
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="dropdown-item" href="#">Categoría1</a></li>
+                    <li><a class="dropdown-item" href="#">Categoría2</a></li>
+                    <li><a class="dropdown-item" href="#">Categoría3</a></li>
+                </ul>
             </li>
             <li class="nav-item"><a href="/contacto.php" class="nav-link
             <?php if ($_SERVER['SCRIPT_NAME'] == '/contacto.php') {
