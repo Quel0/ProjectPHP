@@ -37,11 +37,13 @@
                 <a class="nav-link dropdown-toggle" id="dropdownMenu1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     CATEGORÍAS
                 </a>
+                
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a class="dropdown-item" href="#">Categoría1</a></li>
-                    <li><a class="dropdown-item" href="#">Categoría2</a></li>
-                    <li><a class="dropdown-item" href="#">Categoría3</a></li>
+                    <?php foreach ($categorias as $id => $categoria): ?>
+                    <li><a class="dropdown-item" href="#"><?php echo $categoria ?></a></li>
+                    <?php endforeach ?>
                 </ul>
+                
             </li>
             <li class="nav-item"><a href="/contacto.php" class="nav-link
             <?php if ($_SERVER['SCRIPT_NAME'] == '/contacto.php') {
