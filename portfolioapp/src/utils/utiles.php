@@ -15,3 +15,8 @@ function ordenaProyectosDsc($proyectos)
     });
     return $proyectos;
 }
+
+function fechaAno(){
+    $anio = date("Y");
+    return $anio;
+};

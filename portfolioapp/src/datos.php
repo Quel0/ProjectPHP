@@ -18,53 +18,17 @@ $categorias = [
     6 => "PHP"
 ];
 
-$proyectos = [
-    [
-        "id" => 1,
-        "clave" => "proyecto1",
-        "titulo" => "Laravel PHP",
-        "descripcion" => "Framework backend en PHP",
-        "imagen" => "static/images/proyecto1.jpg",
-        "fecha" => "15/01/2025",
-        "categorias" => [1, 3, 6]
-    ],
-    [
-        "id" => 2,
-        "clave" => "proyecto2",
-        "titulo" => "Django Python",
-        "descripcion" => "Framework backend en Python",
-        "imagen" => "static/images/proyecto1.jpg",
-        "fecha" => "02/02/2025",
-        "categorias" => [1, 3, 5]
-    ],
-    [
-        "id" => 3,
-        "clave" => "proyecto3",
-        "titulo" => "Node JS",
-        "descripcion" => "Entorno backend con JavaScript",
-        "imagen" => "static/images/proyecto1.jpg",
-        "fecha" => "18/03/2025",
-        "categorias" => [1, 4]
-    ],
-    [
-        "id" => 4,
-        "clave" => "proyecto4",
-        "titulo" => "Angular",
-        "descripcion" => "Framework frontend para SPA",
-        "imagen" => "static/images/proyecto1.jpg",
-        "fecha" => "05/04/2025",
-        "categorias" => [2, 3, 4]
-    ],
-    [
-        "id" => 5,
-        "clave" => "proyecto5",
-        "titulo" => "Next JS",
-        "descripcion" => "Framework frontend/backend basado en React",
-        "imagen" => "static/images/proyecto1.jpg",
-        "fecha" => "21/05/2025",
-        "categorias" => [2, 3, 4]
-    ],
-];
+// UD3.3.g Lectura de ficheros JSON y fusión en un único array
+$json1 = file_get_contents('proyectos1.json');
+$json2 = file_get_contents('proyectos2.json');
 
+$proyectos_json1 = json_decode($json1, true);
+$proyectos_json2 = json_decode($json2, true);
+
+$proyectos = array_merge($proyectos_json1, $proyectos_json2);
+
+// UD3.3.f Creación el array para filtrar
+
+$proyectos_filtrado =[]
 
 ?>

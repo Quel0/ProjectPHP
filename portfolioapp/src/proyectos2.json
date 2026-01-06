@@ -1,0 +1,20 @@
+[
+    {
+        "id": 4,
+        "clave": "proyecto4",
+        "titulo": "Angular",
+        "descripcion": "Framework frontend para SPA",
+        "imagen": "static/images/proyecto1.jpg",
+        "fecha": "05/04/2025",
+        "categorias": [2, 3, 4]
+    },
+    {
+        "id": 5,
+        "clave": "proyecto5",
+        "titulo": "Next JS",
+        "descripcion": "Framework frontend/backend basado en React",
+        "imagen": "static/images/proyecto1.jpg",
+        "fecha": "21/05/2025",
+        "categorias": [2, 3, 4]
+    }
+]

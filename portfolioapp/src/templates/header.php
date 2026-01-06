@@ -1,5 +1,7 @@
 <!--DOCTYPE html -->
-<?php include("datos.php") ?>
+<?php include_once("utils/utiles.php") ?>
+<?php include_once("datos.php") ?>
+
 <html>
 
 <head>
@@ -24,7 +26,7 @@
             <svg class="bi me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
             </svg>
-            <span class="fs-4">Portfolio</span>
+            <span class="fs-4">Portfolio <?php echo fechaAno(); ?></span>
         </a>
         <!-- UD_3.2.a.b Modificar los enlaces para que lleven a inicio y contacto -->
         <ul class="nav nav-pills">
@@ -37,10 +39,10 @@
                 <a class="nav-link dropdown-toggle" id="dropdownMenu1" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     CATEGORÍAS
                 </a>
-                
+                <!-- UD3.3.e.f dropdown con bucle recorriendo el categorías para mostrarlas en el menu y en index-->
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <?php foreach ($categorias as $id => $categoria): ?>
-                    <li><a class="dropdown-item" href="#"><?php echo $categoria ?></a></li>
+                    <li><a class="dropdown-item" href="/index.php?categoria=<?php echo $id ?>"><?php echo $categoria ?></a></li>
                     <?php endforeach ?>
                 </ul>
                 

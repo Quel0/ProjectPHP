@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "clave": "proyecto1",
+        "titulo": "Laravel PHP",
+        "descripcion": "Framework backend en PHP",
+        "imagen": "static/images/proyecto1.jpg",
+        "fecha": "15/01/2025",
+        "categorias": [1, 3, 6]
+    },
+    {
+        "id": 2,
+        "clave": "proyecto2",
+        "titulo": "Django Python",
+        "descripcion": "Framework backend en Python",
+        "imagen": "static/images/proyecto1.jpg",
+        "fecha": "02/02/2025",
+        "categorias": [1, 3, 5]
+    },
+    {
+        "id": 3,
+        "clave": "proyecto3",
+        "titulo": "Node JS",
+        "descripcion": "Entorno backend con JavaScript",
+        "imagen": "static/images/proyecto1.jpg",
+        "fecha": "18/03/2025",
+        "categorias": [1, 4]
+    }
+]
